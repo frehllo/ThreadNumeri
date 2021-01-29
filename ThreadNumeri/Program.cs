@@ -13,11 +13,11 @@ namespace Galeotti_RicercaConcorrente
         {
             int[] numeri = new int[100];
             RiempiArray(ref numeri);
-            Console.WriteLine("Inserisci un numero da ricercare:");
+            Console.WriteLine("Inserisci un numero da ricercare :");
             int n1 = int.Parse(Console.ReadLine());
             Thread thread = new Thread(() => RicercaNumero(n1, numeri));
             thread.Start();
-            Console.WriteLine("Inserisci un numero da ricercare:");
+            Console.WriteLine("Inserisci un numero da ricercare :");
             int n2 = int.Parse(Console.ReadLine());
             RicercaNumero(n2, numeri);
             Console.ReadLine();
